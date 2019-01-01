@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen|Raleway|Titillium+Web|Ubuntu|Quicksand');
+
+:root:before {
+  background-image: url(/@/images/dadryan.jpg);
+  visibility: hidden;
+  position: absolute;
+  left: -999em;
+}
+
+/* Hero Image and Overlay Text below */
+
+.hero-image {
+  position: relative; 
+  overflow: visible; 
+  width: 100vw; 
+  height: 100vh;
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  bottom: 0; 
+  min-width: 100vw; 
+  min-height: 100vh; 
+  overflow-x: hidden; 
+  background-image: url("./images/dadryan.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 70%;
+  
+  /* animation component of hero image */
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1.5s;
+  animation-duration: 1.5s;
+  animation-fill-mode:forwards;
+}
+
+/* fade in of hero background image */
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.hero-caption {
+  font-weight: normal;
+  font-family: 'Quicksand', sans-serif;
+  color: #ffffff;
+  text-align: center; 
+  vertical-align: bottom;
+  top: 70vh;
+  width: 100vw;
+  position: relative;    
+}
+
+.career-headline {
+  font-weight: normal;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  position: relative;
+  font-size: 3vmin;
+  right: 0vw;
+  left: 0vw;
+  height: 5vh;
+}
+
+/* End of Hero Image and Overlay Text */
+
+/* Start Career History after the background image */
+
+h1 {
+  font-size: 7vmin;
+  font-family: 'Quicksand', sans-serif;
+}
+
+a {
+  color: #0188cc;
+  align-content:center;
+  align-items: center;
+  align-self: center;
+  vertical-align: bottom;
+}
+
+.career-start {
+  margin: 0px auto; 
+  align-content: center;
+  align-items: center;
+  position: absolute;
+  top: 105vh;
+  right: 0vw;
+  left: 0vw;
+}
+
+.pos-headline {
+  width: 60vw;
+  align-content: center;
+  align-items: center;
+  align-self: center;
+  position: relative;
+  margin-left: 20vw;
+  vertical-align: baseline;
+}
+
+.company-logo {
+  position: relative;
+  display: inline-block;
+  width: 12vw;
+}
+
+.company-image{
+  width: 10vw;
+  display: inline-block;
+}
+
+.company-headline {
+  font-size: 2vmin;
+  font-family: 'Quicksand', sans-serif;
+  text-align: left;
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.company-description {
+  width: 60vw;
+  font-size: 2vmin;
+  position: relative;
+  left: 20pt;
+}
+
+.foot-img {
+  width: 2vw;
+  height: 2vw;
+}
+
+#axis:hover .move-up {
+  transform: translate(0,-18vh);
+  -webkit-transform: translate(0,-18vh);
+  -o-transform: translate(0,-18vh); 
+  -moz-transform: translate(0,-18vh);
+}
+
+@media screen and (max-width:480px) {
+  .pos-headline{
+    align-content: center; /* The width is 100%, when the viewport is 800px or smaller */
+    width:100vw;
+    margin-left: 0vw;
+  }
+  .company-logo{
+    width:100vw;
+    font-size: 2vmin;
+    align-content: center;
+    text-align: center;
+    margin-left: 0vw;
+    vertical-align: middle;
+  }
+  .company-image{
+    width: 40vw;
+    align-content: center;
+    text-align: center;
+    padding-bottom: 2vh;
+    padding-top: 0;
+    vertical-align: middle;
+  }
+  .company-headline{
+    width:90vw;
+    text-align: center;
+    font-size: 3vmin; 
+    margin-left: 5vw;
+  }
+  .company-description{
+    width:80vw;
+    font-size: 3vmin; 
+    margin-left: 0vw;
+  }
+  .foot-img{
+    width: 10vw;
+    height: 10vw;
+  } 
+  .career-start {
+    top: 102vh;
+  }
+  .career-headline {
+    font-size: 4vmin;
+    padding-bottom: 2vh;
+    padding-top: 0;
+  }
+}
+
+.contact-footer{
+  align-content: center;
+  text-align: center;
+  width: 99vw;
+  font-size: 3vmin;
+  font-family: 'Quicksand', sans-serif;
+}
+
+ul {
+  font-family:'Raleway', sans-serif;
+  padding-left: 1em;
+  margin: 0px;
+}
+
+li {
+  margin: 1em 0em;
+  font-family:'Raleway', sans-serif;
+}
+
+br{
+  height: 3vh;
+}
+
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  border-style: inset;
+  border-width: 1px;
+} 
