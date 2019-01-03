@@ -4,7 +4,7 @@
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.1+13-LTS"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.1\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Scott&apos;s XPS\mysite\personal-site\mainsite"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Scott&apos;s XPS\mysite\personal-site\personal-site\mainsite"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="user.country" value="AU"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\Scott&apos;s XPS\mysite\personal-site\mainsite"/>
+    <property name="user.dir" value="C:\Users\Scott&apos;s XPS\mysite\personal-site\personal-site\mainsite"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="java.runtime.version" value="11.0.1+13-LTS"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
@@ -45,7 +45,7 @@
     <property name="java.class.path" value="C:\Program Files\apache-maven-3.6.0\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean deploy"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-11.0.1"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
