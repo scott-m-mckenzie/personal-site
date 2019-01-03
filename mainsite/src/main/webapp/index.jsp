@@ -23,7 +23,7 @@
       <div class="company-headline">an amazing airline where I have progressed my career in leadership and project delivery...</div>
       <div class="company-description">
         <ul>
-          <li>Acting manager of the Airline Operations Technology department for 6 months</li>
+          <li>Acting manager of the Airline Operations Technology department for 5 months</li>
           <li>built a highly effective team that sucessfully delivered 40+ projects over a 2½ year period</li>
           <li>led major upgrades of Virgin's lounge and VIP systems</li>
           <li>led the implementation of a Staff Travel platform which resulted in a 47% increase in staff travel bookings</li>
