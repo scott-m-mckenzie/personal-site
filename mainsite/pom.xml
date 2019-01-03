@@ -3,10 +3,10 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.scottmmckenzie.mysite</groupId>
   <artifactId>mainsite</artifactId>
-  <packaging>jar</packaging>
+  <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>mainsite</name>
-  <url>http://maven.apache.org</url>
+  <url>http://scottmmckenzie.com</url>
   <properties>
     <maven.compiler.source>6</maven.compiler.source>
     <maven.compiler.target>1.6</maven.compiler.target>
@@ -59,6 +59,14 @@
                 <phase>deploy</phase>
               </execution>
             </executions>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-war-plugin</artifactId>
+          <version>3.2.2</version>
+          <configuration>
+            <webappDirectory>/sample/servlet/container/deploy/directory</webappDirectory>
+          </configuration>
         </plugin>
     </plugins>
   </build>
