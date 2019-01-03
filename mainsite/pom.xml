@@ -3,14 +3,80 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.scottmmckenzie.mysite</groupId>
   <artifactId>mainsite</artifactId>
-  <packaging>jar</packaging>
+  <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>mainsite</name>
-  <url>http://maven.apache.org</url>
+  <url>http://scottmmckenzie.com</url>
   <properties>
     <maven.compiler.source>6</maven.compiler.source>
     <maven.compiler.target>1.6</maven.compiler.target>
+    <github.global.server>github</github.global.server>
   </properties>
+  <build>
+    <directory>${project.basedir}/target</directory>
+    <outputDirectory>${project.build.directory}/classes</outputDirectory>
+    <finalName>${project.artifactId}-${project.version}</finalName>
+    <testOutputDirectory>${project.build.directory}/test-classes</testOutputDirectory>
+    <sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
+    <scriptSourceDirectory>src/main/scripts</scriptSourceDirectory>
+    <testSourceDirectory>${project.basedir}/src/test/java</testSourceDirectory>
+    <resources>
+      <resource>
+        <directory>${project.basedir}/src/main/resources</directory>
+      </resource>
+    </resources>
+    <testResources>
+      <testResource>
+        <directory>${project.basedir}/src/test/resources</directory>
+      </testResource>
+    </testResources>
+    <plugins>
+      <plugin>
+        <artifactId>maven-deploy-plugin</artifactId>
+        <version>2.8.1</version>
+        <configuration>
+            <altDeploymentRepository>internal.repo::default::file://${project.build.directory}/mvn-deploy-git</altDeploymentRepository>
+        </configuration>
+      </plugin>
+        <plugin> 
+            <groupId>com.github.github</groupId>
+            <artifactId>site-maven-plugin</artifactId>
+            <version>0.11</version>
+            <configuration>
+                <message>Maven artifacts for ${project.version}</message>  
+                <noJekyll>true</noJekyll>                                  
+                <outputDirectory>${project.build.directory}/mvn-deploy-git</outputDirectory>
+                <branch>refs/heads/mvn-deploy-git</branch>                    
+                <includes><include>**/*</include></includes>
+                <repositoryName>personal-site</repositoryName>    
+                <repositoryOwner>scott-m-mckenzie</repositoryOwner>   
+            </configuration>
+            <executions>
+              <execution>
+                <goals>
+                  <goal>site</goal>
+                </goals>
+                <phase>deploy</phase>
+              </execution>
+            </executions>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-war-plugin</artifactId>
+          <version>3.2.2</version>
+          <configuration>
+            <webappDirectory>/sample/servlet/container/deploy/directory</webappDirectory>
+          </configuration>
+        </plugin>
+    </plugins>
+  </build>
+  <distributionManagement>
+    <repository>
+        <id>internal.repo</id>
+        <name>Temporary Staging Repository</name>
+        <url>file://${project.build.directory}/mvn-deploy-git</url>
+    </repository>
+  </distributionManagement>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -20,3 +86,4 @@
     </dependency>
   </dependencies>
 </project>
+
