@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oxygen|Raleway|Titillium+Web|Ubuntu|Quicksand');
 
 :root:before {
-  background-image: url(/@/images/dadryan.jpg);
+  background-image: url(../images/dadryan.jpg);
   visibility: hidden;
   position: absolute;
   left: -999em;
@@ -21,7 +21,7 @@
   min-width: 100vw; 
   min-height: 100vh; 
   overflow-x: hidden; 
-  background-image: url("./images/dadryan.jpg");
+  background-image: url("../images/dadryan.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: 70%;
