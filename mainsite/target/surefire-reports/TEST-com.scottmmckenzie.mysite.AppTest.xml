@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<<<<<<< HEAD
 <testsuite tests="1" failures="0" name="com.scottmmckenzie.mysite.AppTest" time="0.002" errors="0" skipped="0">
+=======
+<testsuite tests="1" failures="0" name="com.scottmmckenzie.mysite.AppTest" time="0.003" errors="0" skipped="0">
+>>>>>>> c94c277a40662b898ab5c1a795fa748c31c53b20
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.1+13-LTS"/>
@@ -45,7 +49,11 @@
     <property name="java.class.path" value="C:\Program Files\apache-maven-3.6.0\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
+<<<<<<< HEAD
     <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher deploy -f c:\Users\Scott&apos;s XPS\personal-site\mainsite\pom.xml"/>
+=======
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher deploy"/>
+>>>>>>> c94c277a40662b898ab5c1a795fa748c31c53b20
     <property name="java.home" value="C:\Program Files\Java\jdk-11.0.1"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -65,5 +73,9 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
+<<<<<<< HEAD
   <testcase classname="com.scottmmckenzie.mysite.AppTest" name="testApp" time="0.002"/>
+=======
+  <testcase classname="com.scottmmckenzie.mysite.AppTest" name="testApp" time="0.003"/>
+>>>>>>> c94c277a40662b898ab5c1a795fa748c31c53b20
 </testsuite>
