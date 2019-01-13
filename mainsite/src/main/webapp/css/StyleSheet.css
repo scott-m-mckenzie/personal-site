@@ -71,7 +71,71 @@
   height: 5vh;
 }
 
-/* End of Hero Image and Overlay Text */
+.flight-group {
+  margin: 0px auto; 
+  align-content: center;
+  align-items: center;
+  position: relative;
+  right: 0vw;
+  left: 0vw;
+}
+.flight-group-headline {
+  font-weight: normal;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  position: relative;
+  font-size: 3vmin;
+  right: 0vw;
+  left: 0vw;
+  height: 10vh;
+}
+.flight-box{
+  height:100px;
+  width:80vw;
+  border:2px solid black;
+  left: 20pt;
+  border-radius: 20px;
+  padding: 5px;
+  background:white;
+}
+
+.flight-headline {  
+  width:40vw;
+  margin-top:-10px;
+  margin-left:5px;
+  background:white;
+  font-size: 2vmin;
+  font-family: 'Quicksand', sans-serif;
+  text-align: left;
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  left: 20pt;
+}
+
+.flight-description {
+  width: 70vw;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2vmin;
+  position: relative;
+  left: 20pt;
+}
+
+.flightdetail {
+  font-size: 2vmin;
+  position: relative;
+  left: 20pt;
+  font-family: 'Quicksand', sans-serif;
+  width: 50vw;
+}
+
+.card {
+  align-content: center;
+  text-align: center;
+  width: 50vw;
+  margin: 1rem;
+  border: 1px solid gray;
+}
 
 /* Start Career History after the background image */
 
@@ -226,3 +290,18 @@ hr {
   border-style: inset;
   border-width: 1px;
 } 
+
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flightdetail {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 1rem;
+  border: 1px solid gray;
+}
